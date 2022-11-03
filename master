@@ -5,3 +5,40 @@ int main()
   printf("Hello, World!\n");
   return 0;
 }
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+void main()
+{
+    srand((int)time(0));
+    int a, b,otvet,x,p=0,n=0;
+    while (n<3)
+    {
+        a = rand() % 10;
+        b = rand() % 10;
+        x = rand() % 3;
+        switch (x)
+        { case 1:
+            if (x = 0)
+                cout << '+';
+            break;
+          case 2:
+              if (x = 1)
+                  cout << '-';
+              break;
+          case 3:
+              if (x = 3)
+                  cout << '*';
+          }
+        cout << a << x << b << '=';
+        cin >> otvet;
+        if (a&&x&&b == otvet)
+            ++p;
+        else
+            ++n;
+    }
+    cout << "p= "<<p;
+ 
+ 
+}
